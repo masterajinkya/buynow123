@@ -106,7 +106,7 @@ function Product() {
 
                 </div>
             </section>
-            <section className='my-5' >
+            <section className='my-5 mb-0' >
                 <div className='container mt-5'>
                     <table class="table table-bordered">
                         <thead>
