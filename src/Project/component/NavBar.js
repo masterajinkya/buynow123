@@ -71,7 +71,7 @@ function NavBar() {
 
     return (
         <>
-            <Box sx={{ flexGrow: 1 }}>
+            <Box sx={{ flexGrow: 1 , marginTop: 5}} >
                 <AppBar position="fixed">
                     <Toolbar>
                         <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
@@ -83,7 +83,7 @@ function NavBar() {
             </Box>
 
             {/* -------------------------PopUp----------------------------*/}
-            <Modal size='md' className='popup border border-primary ' isOpen={modal} toggle={() => setModal(!modal)}>
+            <Modal size='md' className='popup border border-primary mt-5 ' isOpen={modal} toggle={() => setModal(!modal)}>
                 <ModalHeader className='p-5'>
 
                     <form onSubmit={handleSubmit}>
