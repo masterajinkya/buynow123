@@ -50,14 +50,16 @@ function NavBar() {
             const newPro = { ...formData, id }
             setData([...data, newPro])
             const userdata = [...data, newPro]
+
+            localStorage.setItem("userinput", JSON.stringify([...data, newPro]))
+            navigate("/")
             setFormData({
                 prodimg: '',
                 prodtname: '',
                 prodprice: '',
                 quantity: 1,
             });
-            localStorage.setItem("userinput", JSON.stringify([...data, newPro]))
-            navigate("/")
+            setModal(false)
         } else {
             alert("Please upload a file below 100 kb")
         }
